@@ -182,7 +182,7 @@ RE.insertImage = function(url, alt) {
 }
 
 RE.insertVideo = function(url, alt) {
-    var html = '<video src="' + url + '" controls/>';
+    var html = '<br> <video src="' + url + '" controls/>';
     RE.insertHTML(html);
 }
 
