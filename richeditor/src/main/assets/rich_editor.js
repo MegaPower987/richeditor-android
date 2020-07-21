@@ -182,12 +182,12 @@ RE.insertImage = function(url, alt) {
 }
 
 RE.insertVideo = function(url, alt) {
-    var html = '<video src="' + url + '" controls/><br>';
+    var html = '<video src="' + url + '" controls/> &nbsp; <br>';
     RE.insertHTML(html);
 }
 
 RE.insertAudio = function(url, alt) {
-    var html = '<audio src="' + url + '" controls/><br>';
+    var html = '<audio src="' + url + '" controls/> &nbsp; <br>';
     RE.insertHTML(html);
 }
 
