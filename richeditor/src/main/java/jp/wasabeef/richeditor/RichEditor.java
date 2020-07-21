@@ -372,6 +372,17 @@ public class RichEditor extends WebView {
     exec("javascript:RE.prepareInsert();");
     exec("javascript:RE.insertLink('" + href + "', '" + title + "');");
   }
+  
+    public void insertVideo(String url) {
+    exec("javascript:RE.prepareInsert();");
+    exec("javascript:RE.insertVideo('" + url + "');");
+  }
+
+  public void insertAudio(String url) {
+    exec("javascript:RE.prepareInsert();");
+    exec("javascript:RE.insertAudio('" + url + "');");
+  }
+
 
   public void insertTodo() {
     exec("javascript:RE.prepareInsert();");
