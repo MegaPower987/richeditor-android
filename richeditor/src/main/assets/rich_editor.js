@@ -191,11 +191,17 @@ RE.insertAudio = function(url, alt) {
     RE.insertHTML(html);
 }
 
+RE.setTodo = function(text) {
+    var html = '<input type="checkbox" name="'+ text +'" value="'+ text +'"/> &nbsp;';
+    document.execCommand('insertHTML', false, html);
+}
+
 
 RE.insertHTML = function(html) {
     RE.restorerange();
     document.execCommand('insertHTML', false, html);
 }
+
 
 RE.insertLink = function(url, title) {
     RE.restorerange();
@@ -213,11 +219,6 @@ RE.insertLink = function(url, title) {
        sel.addRange(range);
    }
     RE.callback();
-}
-
-RE.setTodo = function(text) {
-    var html = '<input type="checkbox" name="'+ text +'" value="'+ text +'"/> &nbsp;';
-    document.execCommand('insertHTML', false, html);
 }
 
 RE.prepareInsert = function() {
