@@ -189,6 +189,7 @@ RE.insertVideo = function(url, alt) {
 RE.insertAudio = function(url, alt) {
     var html = '<audio src="' + url + '" controls/>&nbsp;';
     RE.insertHTML(html);
+    RE.restorerange();
 }
 
 RE.setTodo = function(text) {
