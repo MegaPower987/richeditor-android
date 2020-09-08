@@ -177,7 +177,7 @@ RE.setBlockquote = function() {
 }
 
 RE.insertImage = function(url, alt) {
-    var html = '<img src="' + url + '" alt="' + alt + '" width="500" />';
+    var html = '<img src="' + url + '" alt="' + alt + '" width="220" />';
     RE.insertHTML(html);
 }
 
